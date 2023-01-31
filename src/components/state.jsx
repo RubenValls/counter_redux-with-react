@@ -1,10 +1,10 @@
-import store from '../redux/store';
+import { useSelector } from 'react-redux';
 
 
 const State = () => {
     return (
         <div className='container border-bottom border-dark mt-5 p-1'>
-            <h2>{store.getState()}</h2>
+            <h2>{useSelector(state => state)}</h2>
         </div>
     );
 }
